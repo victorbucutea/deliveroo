@@ -22,7 +22,7 @@ $ mvn clean install
 Download v1.0 release from here https://github.com/victorbucutea/deliveroo/releases and execute according to specs:
 
 ```bash
-$ java -jar deliveroo-1.0-SNAPSHOT.jar "0 0 1,2,3,15 * 1-5 /usr/bin/find"
+$ java -jar deliveroo-cron-parser.jar "0 0 1,2,3,15 * 1-5 /usr/bin/find"
   minute        0
   hour          0
   day of month  1 2 3 15
