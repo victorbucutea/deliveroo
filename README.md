@@ -6,16 +6,23 @@ The script was developed in java and maven was used for building and unit testin
 The decision to use these tools was taken given the popularity of the tools in java world. 
 only dependency is junit. 
 
+
+### Building the script
 N.b. You will need at least Apache Maven 3.x and JDK 1.8 to build and run the script. 
 
-### Running the script
-From the project root, do `mvn clean install` and execute according to specs:
+From the project root, do `mvn clean install` :
 ```bash
 $ mvn clean install
 ..
 [INFO] BUILD SUCCESS
 ..
-$ java -jar target/deliveroo-1.0-SNAPSHOT.jar "0 0 1,2,3,15 * 1-5 /usr/bin/find"
+```
+
+### Running the script
+Download v1.0 release from here https://github.com/victorbucutea/deliveroo/releases and execute according to specs:
+
+```bash
+$ java -jar deliveroo-1.0-SNAPSHOT.jar "0 0 1,2,3,15 * 1-5 /usr/bin/find"
   minute        0
   hour          0
   day of month  1 2 3 15
